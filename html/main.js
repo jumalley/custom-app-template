@@ -61,7 +61,6 @@ const convertActionToFn = (data) => {
 
 window.addEventListener('message', e => {
     if (e.data === 'app-opened') {
-        console.log('app-opened')
         return
     }
     if (e.data !== 'phone-load') return convertActionToFn(e.data)
